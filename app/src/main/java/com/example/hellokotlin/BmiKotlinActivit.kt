@@ -31,7 +31,7 @@ class BmiKotlinActivit : AppCompatActivity() {
             }
 */
             if(!sHeight.equals("") && !sWeight.equals("")){
-                val bmi = sWeight.toDouble() / Math.pow(sHeight.toDouble() / 100, 2.0);
+                val bmi = sWeight.toDouble() / Math.pow(sHeight.toDouble() / 100.0, 2.0);
                 textResult.setText("Your BMI = " + bmi)
             }else{
                 textResult.setText("inpus(S) missing")

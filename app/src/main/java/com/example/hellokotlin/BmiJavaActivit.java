@@ -36,7 +36,7 @@ public class BmiJavaActivit extends AppCompatActivity {
                 }*/
                 // if(!sHeight.equals("") && !sWeight.equals(""))
                 if(!sHeight.isEmpty() && !sWeight.isEmpty()){
-                    double bmi = Double.parseDouble(sWeight) / Math.pow(Double.parseDouble(sHeight) / 100., 2.);
+                    double bmi = Double.parseDouble(sWeight) / Math.pow(Double.parseDouble(sHeight) / 100.0, 2.0);
                     txtResult.setText("Your BMI = " + bmi);
                 }else{
                     txtResult.setText("inpus(S) missing");
