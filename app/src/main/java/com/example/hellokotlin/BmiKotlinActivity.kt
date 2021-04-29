@@ -7,7 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import java.lang.Exception
 
-class BmiKotlinActivit : AppCompatActivity() {
+class BmiKotlinActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_view_binding)

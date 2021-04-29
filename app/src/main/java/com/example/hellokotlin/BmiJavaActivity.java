@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class BmiJavaActivit extends AppCompatActivity {
+public class BmiJavaActivity extends AppCompatActivity {
     EditText heightfield, weightfield;
     TextView txtResult;
     Button btnBmi;

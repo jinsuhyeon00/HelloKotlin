@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloKotlin">
         <activity
-            android:name=".BmiKotlinActivit"
-            android:label="BmiKotlinActivity"></activity>
+            android:name=".VariableKotlinActivity"
+            android:label="VariableKotlinActivity"></activity>
         <activity
-            android:name=".BmiJavaActivit"
+            android:name=".VariableJavaActivity"
+            android:label="VariableJavaActivity" />
+        <activity
+            android:name=".BmiKotlinActivity"
+            android:label="BmiKotlinActivity" />
+        <activity
+            android:name=".BmiJavaActivity"
             android:label="BmiJavaActivity" />
         <activity
             android:name=".MainActivity"
