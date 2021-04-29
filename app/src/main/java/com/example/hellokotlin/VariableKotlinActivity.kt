@@ -17,6 +17,9 @@ class VariableKotlinActivity : AppCompatActivity() {
         val txtCountBtnClick = findViewById<TextView>(R.id.txtCountBtnClicks)
         val btnClickMe = findViewById<Button>(R.id.btnClickMe)
 
+        val txtElapsedTime = findViewById<TextView>(R.id.txtElapsedTime)
+
+
         var clickCount = 0
         val startTime = System.currentTimeMillis()
         val sTimeStamp =  SimpleDateFormat("HH:mm:ss", Locale.KOREA).format(startTime)
@@ -26,6 +29,8 @@ class VariableKotlinActivity : AppCompatActivity() {
         btnClickMe.setOnClickListener {
             clickCount++
             txtCountBtnClick.text = "Button click =  ${clickCount}"
+            var elapsedSeconds : Long = ((System.currentTimeMillis() - startTime) / 1000.0).toLong()
+            txtElapsedTime.setText("${elapsedSeconds} seconds elapsed")
 
         }
 

@@ -19,19 +19,30 @@
         android:id="@+id/txtCountBtnClicks"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="92dp"
         android:text="Count Button Clicks"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtActivityStartTime"
         app:layout_constraintTop_toBottomOf="@+id/txtActivityStartTime" />
 
     <Button
         android:id="@+id/btnClickMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="7dp"
         android:text="Click me!"
         app:layout_constraintEnd_toEndOf="@+id/txtCountBtnClicks"
         app:layout_constraintTop_toBottomOf="@+id/txtCountBtnClicks" />
+
+    <TextView
+        android:id="@+id/txtElapsedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="180dp"
+        android:text="Elapsed Time "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtActivityStartTime" />
 </androidx.constraintlayout.widget.ConstraintLayout>
