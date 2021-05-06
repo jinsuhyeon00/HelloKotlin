@@ -35,7 +35,7 @@
         android:id="@+id/btnVarJava"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="120dp"
         android:text="VARIABLE - JAVA"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,9 +45,31 @@
         android:id="@+id/btnVarKotlin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="52dp"
         android:text="VARIABLE - KOTLIN"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnVarJava"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnFlowContolJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:text="FlowContol-J"
+        app:layout_constraintEnd_toStartOf="@+id/btnFlowContolKotlin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnVarJava"
+        app:layout_constraintTop_toBottomOf="@+id/btnVarJava" />
+
+    <Button
+        android:id="@+id/btnFlowContolKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:text="FlowContol-K"
+        app:layout_constraintEnd_toEndOf="@+id/btnVarKotlin"
+        app:layout_constraintTop_toBottomOf="@+id/btnVarKotlin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

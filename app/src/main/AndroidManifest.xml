@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloKotlin">
         <activity
+            android:name=".FlowControlKotlinActivity"
+            android:label="FlowControlKotlinActivity"/>
+        <activity
+            android:name=".FlowControlJavaActivity"
+            android:label="FlowControlJavaActivity" />
+        <activity
             android:name=".VariableKotlinActivity"
-            android:label="VariableKotlinActivity"></activity>
+            android:label="VariableKotlinActivity" />
         <activity
             android:name=".VariableJavaActivity"
             android:label="VariableJavaActivity" />
@@ -23,13 +29,14 @@
             android:label="BmiJavaActivity" />
         <activity
             android:name=".MainActivity"
-            android:label="BMI calculation">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="BMI calculation" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
     </application>
 
 </manifest>
